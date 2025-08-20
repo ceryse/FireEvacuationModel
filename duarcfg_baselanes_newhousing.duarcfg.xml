@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-25 17:26:08 by Eclipse SUMO duarouter Version 1.23.1
+-->
+
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <configuration>
+        <configuration-file value="duarcfg_baselanes_newhousing.duarcfg.xml" synonymes="c configuration" type="FILE" help="Loads the named config on startup"/>
+    </configuration>
+
+    <input>
+        <net-file value="moraga_actuated_adjusted.net.xml" synonymes="n net" type="FILE" help="Use FILE as SUMO-network to route on"/>
+        <additional-files value="" synonymes="a additional d districts taz-files" type="FILE" help="Read additional network data (districts, bus stops) from FILE(s)"/>
+        <route-files value="trips_newhousing.trips.xml" synonymes="alternative-files alternatives-files f flow-files flows r t trip-files trips" type="FILE" help="Read sumo routes, alternatives, flows, and trips from FILE(s)"/>
+    </input>
+
+    <output>
+        <output-file value="baselanes_newhousing.rou.xml" synonymes="o output" type="FILE" help="Write generated routes to FILE"/>
+    </output>
+
+    <processing>
+        <with-taz value="false" type="BOOL" help="Use origin and destination zones (districts) for in- and output"/>
+        <randomize-flows value="true" type="BOOL" help="generate random departure times for flow input"/>
+    </processing>
+
+    <defaults>
+    </defaults>
+
+    <time>
+        <begin value="0" synonymes="b" type="TIME" help="Defines the begin time; Previous trips will be discarded"/>
+        <end value="1800" synonymes="e" type="TIME" help="Defines the end time; Later trips will be discarded; Defaults to the maximum time that SUMO can represent"/>
+    </time>
+
+    <report>
+    </report>
+
+    <random_number>
+        <random value="false" synonymes="abs-rand" type="BOOL" help="Initialises the random number generator with the current system time"/>
+        <seed value="23423" synonymes="srand" type="INT" help="Initialises the random number generator with the given value"/>
+    </random_number>
+
+</duarouterConfiguration>

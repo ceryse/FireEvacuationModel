@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-31 15:50:35 by Eclipse SUMO sumo Version 1.23.1
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <configuration>
+        <configuration-file value="sumo1.sumocfg" synonymes="c configuration" type="FILE" help="Loads the named config on startup"/>
+    </configuration>
+
+    <input>
+        <net-file value="moraga_actuated_adjusted.net.xml" synonymes="n net" type="FILE" help="Load road network description from FILE"/>
+        <route-files value="routes_sorted.rou.xml" synonymes="r routes" type="FILE" help="Load routes descriptions from FILE(s)"/>
+        <additional-files value="districts_modified.taz.xml" synonymes="a additional" type="FILE" help="Load further descriptions from FILE(s)"/>
+    </input>
+
+    <output>
+        <summary-output value="summary-output" />
+        <queue-output value="" type="FILE" help="Save the vehicle queues at the junctions (experimental)"/>
+        <edgedata-output value="" type="FILE" help="Write aggregated traffic statistics for all edges into FILE"/>
+        <tripinfo-output value="" synonymes="tripinfo" type="FILE" help="Save single vehicle trip info into FILE"/>
+    </output>
+
+    <time>
+        <begin value="0" synonymes="b" type="TIME" help="Defines the begin time in seconds; The simulation starts at this time"/>
+        <step-length value="1" type="TIME" help="Defines the step duration in seconds"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="900" type="TIME" help="Specify how long a vehicle may wait until being teleported, defaults to 300, non-positive values disable teleporting"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.probability value="1" type="FLOAT" help="The probability for a vehicle to have a &apos;rerouting&apos; device"/>
+    </routing>
+
+    <report>
+       <log value="" synonymes="l log-file" type="FILE" help="Writes all messages to FILE (implies verbose)"/>
+       <error-log value="" type="FILE" help="Writes all warnings and errors to FILE"/>
+    </report>
+
+    <emissions>
+       
+    </emissions>
+
+    <communication>
+        
+    </communication>
+
+    <battery>
+        
+    </battery>
+
+    <example_device>
+        
+    </example_device>
+
+    <ssm_device>
+       
+    </ssm_device>
+
+    <toc_device>
+        
+    </toc_device>
+
+    <driver_state_device>
+
+    </driver_state_device>
+
+    <bluelight_device>
+     
+    </bluelight_device>
+
+    <fcd_device>
+
+    </fcd_device>
+
+    <elechybrid_device>
+     </elechybrid_device>
+
+    <taxi_device>
+       </taxi_device>
+
+    <glosa_device>
+         </glosa_device>
+
+    <tripinfo_device>
+      </tripinfo_device>
+
+    <vehroutes_device>
+       </vehroutes_device>
+
+    <friction_device>
+    </friction_device>
+
+    <fcd_replay_device>
+     </fcd_replay_device>
+
+    <traci_server>
+     </traci_server>
+
+    <mesoscopic>
+    </mesoscopic>
+
+    <random_number>
+        <random value="false" synonymes="abs-rand" type="BOOL" help="Initialises the random number generator with the current system time"/>
+        <seed value="23423" synonymes="srand" type="INT" help="Initialises the random number generator with the given value"/>
+        <thread-rngs value="64" type="INT" help="Number of pre-allocated random number generators to ensure repeatable multi-threaded simulations (should be at least the number of threads for repeatable simulations)."/>
+    </random_number>
+
+    <gui_only>
+        <gui-settings-file value="" synonymes="g" type="FILE" help="Load visualisation settings from FILE"/>
+        <quit-on-end value="true" synonymes="Q" type="BOOL" help="Quits the GUI when the simulation stops"/>
+        <game value="false" synonymes="G" type="BOOL" help="Start the GUI in gaming mode"/>
+        <game.mode value="tls" type="STR" help="Select the game type (&apos;tls&apos;, &apos;drt&apos;)"/>
+        <start value="false" synonymes="S" type="BOOL" help="Start the simulation after loading"/>
+        <delay value="0" synonymes="d" type="FLOAT" help="Use FLOAT in ms as delay between simulation steps"/>
+        <breakpoints value="" synonymes="B" type="STR[]" help="Use TIME[] as times when the simulation should halt"/>
+        <edgedata-files value="" synonymes="data-files" type="FILE" help="Load edge/lane weights for visualization from FILE"/>
+        <alternative-net-file value="" synonymes="N" type="FILE" help="Load a secondary road network for abstract visualization from FILE"/>
+        <selection-file value="" type="FILE" help="Load pre-selected elements from FILE"/>
+        <demo value="false" synonymes="D" type="BOOL" help="Restart the simulation after ending (demo mode)"/>
+        <disable-textures value="false" synonymes="T" type="BOOL" help="Do not load background pictures"/>
+        <registry-viewport value="false" type="BOOL" help="Load current viewport from registry"/>
+        <window-size value="" type="STR[]" help="Create initial window with the given x,y size"/>
+        <window-pos value="" type="STR[]" help="Create initial window at the given x,y position"/>
+        <tracker-interval value="1" type="TIME" help="The aggregation period for value tracker windows"/>
+        <gui-testing value="false" type="BOOL" help="Enable overlay for screen recognition"/>
+        <gui-testing-debug value="false" type="BOOL" help="Enable output messages during GUI-Testing"/>
+        <gui-testing.setting-output value="" type="FILE" help="Save gui settings in the given settings output file"/>
+    </gui_only>
+
+</sumoConfiguration>

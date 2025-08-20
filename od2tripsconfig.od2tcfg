@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-23 17:55:43 by Eclipse SUMO od2trips Version 1.23.1
+-->
+
+<od2tripsConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/od2tripsConfiguration.xsd">
+
+    <configuration>
+        <configuration-file value="od2tripsconfig.od2tcfg" synonymes="c configuration" type="FILE" help="Loads the named config on startup"/>
+    </configuration>
+
+    <input>
+        <taz-files value="districts_modified.taz.xml" synonymes="n net net-file taz" type="FILE" help="Loads TAZ (districts; also from networks) from FILE(s)"/>
+        <od-amitran-files value="amitran.xml" synonymes="amitran amitran-files" type="FILE" help="Loads O/D-matrix in Amitran format from FILE(s)"/>
+    </input>
+
+    <output>
+        <output-file value="trips.trips.xml" synonymes="o output" type="FILE" help="Writes trip definitions into FILE"/>
+        <flow-output value="flows.flows.xml" type="FILE" help="Writes flow definitions into FILE"/>
+        <ignore-vehicle-type value="true" synonymes="no-vtype" type="BOOL" help="Does not save vtype information"/>
+        <junctions value="false" type="BOOL" help="Writes trips between junctions"/>
+    </output>
+
+    <time>
+        <begin value="0" synonymes="b" type="TIME" help="Defines the begin time; Previous trips will be discarded"/>
+    </time>
+
+    <processing>
+        
+    </processing>
+
+    <defaults>
+
+    </defaults>
+
+    <report>
+       
+    </report>
+
+    <random_number>
+        <random value="false" synonymes="abs-rand" type="BOOL" help="Initialises the random number generator with the current system time"/>
+        <seed value="23423" synonymes="srand" type="INT" help="Initialises the random number generator with the given value"/>
+    </random_number>
+
+</od2tripsConfiguration>
