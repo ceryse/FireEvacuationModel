@@ -4,7 +4,7 @@ The research questions of this project are:
 - How do changes to population size and distribution as a result of housing policy and planning impact the efficiency of wildfire evacuations in the wildland-urban interface?
 - How can the addition of extra lanes to the road network improve evacuation efficiency and mitigate any potential negative impacts from new housing?
 ## Requirements
-To run this code, the user will need to have Python and SUMO installed. All data needed is provided here, unless the file was too large, in which case, it is linked below. If the user doesn't want to download the large files, the notebook can still be run but should be run from Step 3 in the notebook.
+The model is built in the Jupyter Notebook titled Main.ipynb. To run this code, the user will need to have Python and SUMO installed. All data needed is provided here, unless the file was too large, in which case, it is linked below. If the user doesn't want to download the large files, the notebook can still be run but should be run from Step 3 in the notebook.
 ### Data download
 The following links can be used to download the Tiger/Line shapefiles that are used to generate trips. Alternatively, the user can simply start running the code from Step 3 in the Notebook (MoragaCensusBlocks.shp is the result of the processing of this raw data which occurs in Steps 2).
 - [Census Blocks](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Blocks+%282020%29)
