@@ -15,3 +15,6 @@ CAL FIRE (2019b) Merrill Fire, CAL FIRE. Available at: https://www.fire.ca.gov/i
 OpenStreetMap (2025) OpenStreetMap, [OpenStreetMap](https://www.openstreetmap.org/copyright). Available at: https://www.openstreetmap.org/ (Accessed: 21 August 2025).  
 Town of Moraga (2024) ‘General Plan 2040’. Town of Moraga. Available at: https://www.moraga.ca.us/DocumentCenter/View/9733/Moraga-General-Plan-2040-PDF (Accessed: 20 August 2025).   
 US Census Bureau (2020) ‘TIGER/Line Shapefiles’. Available at: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html.  
+Zonehaven (2020) ‘Town of Moraga, California Public Safety Zones’. Zonehaven. Available at: https://www.moraga.ca.us/DocumentCenter/View/5369/emergency_plan_zones_revised?bidId=.  
+Zonehaven (2023) ‘Evacuation Zone Maps’. Genasys. Available at: https://plans.alpha.zonecatalog.com/us/states/ca/counties/xcc/US-CA-XCC-MOR-E001.pdf.  
+
